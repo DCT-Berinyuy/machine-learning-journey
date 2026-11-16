@@ -56,7 +56,7 @@ Dates come from the team's Gantt chart.
 - **Which 5–7 diseases per crop?** They should be the ones that are actually common in Cameroon, chosen with agronomists.
 - **Over 90% accuracy, but on which test set?** Lab-style photos or real field photos? (See the 99% → 31% result above.)
 - **Which languages?** The project sheet says French plus a local language; the kickoff says French and English.
-- **What does the app do with a photo of something else?** See Day 1, Experiment 1.
+- **What does the app do with a photo of something else?** See [Day 1, Experiment 1](daily-log/day-01.md#experiment-1-the-banana-problem).
 
 ## 🧰 Tools and tips
 

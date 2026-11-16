@@ -28,7 +28,7 @@ This repo is my public learning log: what I learn each day, my experiments, my a
 
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 1 | What is machine learning? | 🔜 |
+| Day 1 | [What is machine learning?](daily-log/day-01.md) | ⏳ |
 | Day 2 | Learning from mistakes: loss and gradient descent | 🔜 |
 | Day 3 | Yes or no: probabilities and thresholds | 🔜 |
 | Day 4 | Is the model any good? Precision and recall | 🔜 |
