@@ -1,0 +1,10 @@
+# Course environment for Days 1–6 and 9 (tested on Python 3.14)
+numpy
+scipy
+scikit-learn
+matplotlib
+scikit-image
+ipykernel   # lets Zed's REPL run the code
+jupytext    # turns the course .ipynb notebooks into `# %%` scripts for Zed
+
+# Days 7, 8 and 10 also need tensorflow, which only supports Python 3.10–3.13 for now. See SETUP.md.

@@ -55,13 +55,15 @@ Today's model has 3 settings. MobileNetV2 has millions. It's the same loop.
 
 ## 5. Run the notebook
 
-1. Open [colab.research.google.com](https://colab.research.google.com), choose **File → Upload notebook**, and pick `Day1_What_is_ML.ipynb`.
-2. Run each cell with **Shift + Enter** and read the output.
-3. **Predict before you run.** Write down your guesses:
+I run the course in Zed ([setup](../SETUP.md)).
+
+1. Open `Zed_Notebooks_Days1-10/Day1_What_is_ML.py`. Put the cursor in a cell and press **Ctrl+Shift+Enter** to run it. Go cell by cell and read each output.
+   *(In Colab instead: **File → Upload notebook**, pick `Day1_What_is_ML.ipynb`, and run cells with **Shift + Enter**.)*
+2. **Predict before you run.** Write down your guesses:
    - Section 3: how often will the rule `weight > 210` be right?
    - Section 4: will the learned model beat that rule?
    - Section 5: is the 260 g fruit an orange or a mango, and how sure is the model?
-4. Do the notebook's **Your turn** tasks 1–3.
+3. Do the notebook's **Your turn** tasks 1–3.
 
 <details>
 <summary><b>Tutor's run</b> (open only after your own run)</summary>
@@ -77,7 +79,7 @@ Today's model has 3 settings. MobileNetV2 has millions. It's the same loop.
 
 ## 6. Two extra experiments
 
-Paste each experiment into a new cell at the end of the notebook. Each one builds its own data, so your earlier changes don't matter. **Guess the result before you run it.**
+Add each experiment as a new cell at the end of your Day 1 file: type a new `# %%` line, paste the code under it, and run it. Each one builds its own data, so your earlier changes don't matter. **Guess the result before you run it.**
 
 ### Experiment 1: The banana problem
 
