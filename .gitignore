@@ -1,0 +1,28 @@
+# Course materials stay outside this repo (copyright: Dr. Fotsing Kuetche / ICT University Research Lab)
+*.pdf
+*.pptx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Datasets and trained models: download or regenerate them instead
+# (use `git add -f` to keep a small one on purpose)
+data/
+datasets/
+checkpoints/
+*.zip
+*.tgz
+*.tar.gz
+*.h5
+*.keras
+*.tflite
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
