@@ -21,6 +21,7 @@ This repo is my public learning log: what I learn each day, my experiments, my a
 5. **Commit** my notes, experiments and answers here
 
 ## 📂 Repository Structure
+- [`ROADMAP.md`](ROADMAP.md) → the full learning plan, mapped to Project 2
 - `daily-log/` → one file per day: lesson notes, experiments, my answers and reflection
 
 ## 📈 Progress Tracker
