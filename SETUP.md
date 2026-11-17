@@ -48,4 +48,4 @@ TensorFlow 2.21 only supports Python 3.10–3.13, and this environment uses Pyth
 
 ## Checked
 
-Days 1–6 and 9 run through the kernel with no errors, plots included (Python 3.14, Zed 1.19, numpy 2.5, scikit-learn 1.9, scikit-image 0.26).
+Days 1–6 and 9 run through the kernel with no errors, plots included (Python 3.14, Zed 1.19, numpy 2.5, scikit-learn 1.9, scikit-image 0.26). Day 9 prints exactly the numbers in Workbook Part 2: 97% in the lab, 13% when shifted, and the same recall for every digit.

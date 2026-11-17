@@ -32,15 +32,23 @@ Dates come from the team's Gantt chart.
 | 4 | Is the model any good? Precision and recall | — | A missed disease and a false alarm cost a farmer different things, and accuracy alone hides that |
 | 5 | Data and overfitting | — | An honest train / validation / test split is the first defence against the 99% → 31% trap |
 
-### Week 2 · Computer vision and deployment (notebooks 6–10; workbook Part 2 to come)
+### Week 2 · Computer vision: from pixels to a model on a device (Workbook Part 2, notebooks 6–10)
+
+The workbook calls **Day 9 the most important day of the course**.
 
 | Day | Topic | Watch | Why it matters for Project 2 |
 |-----|-------|-------|------------------------------|
-| 6 | How computers see | [ML Zero to Hero 2](https://www.youtube.com/watch?v=bemDFpNooA8) (7 min) | A leaf photo is just numbers: 224 × 224 × 3 = 150,528 of them |
+| 6 | How computers see | [ML Zero to Hero 2](https://www.youtube.com/watch?v=bemDFpNooA8) (7 min) | A leaf photo is just numbers: 224 × 224 × 3 = 150,528 of them. For the photo exercise, I'll open my own phone photo of a leaf |
 | 7 | Convolutions and CNNs | [ML Zero to Hero 3](https://www.youtube.com/watch?v=x_VrgWTKkiM) (6 min) | Filters learn spots, rings and textures, which is what disease looks like |
 | 8 | Training for the real world | [ML Zero to Hero 4](https://www.youtube.com/watch?v=u2TjZzNuly8) (5 min) | Transfer learning with MobileNetV2 is exactly our project's recipe |
 | 9 | Testing the truth | — | Lab vs field photos: test every class and every condition separately |
 | 10 | Shrink and ship | — | Quantise to TensorFlow Lite so the model fits and runs on the phone |
+
+**Three points from Part 2 that apply directly to Project 2:**
+
+- **Colour can be the symptom (Day 8).** The workbook warns that strong colour changes can harm training when colour is what tells healthy from sick. On leaves it often is: yellowing, brown spots, the orange powder of coffee leaf rust. Flips, small rotations, zoom and brightness changes are safe; strong colour shifts are not.
+- **Test by group and keep a failure folder (Day 9).** For us, the groups are crop, disease, phone model, light (sun, shade, cloud), region and season. The photos the model gets wrong tell us what to collect next.
+- **We can't skip quantisation (Day 10).** Rule of thumb: 1 million weights take about 4 MB in float32 and 1 MB in int8. MobileNetV2 without its ImageNet head has 2,257,984 weights, so about 9 MB in float32, which is already over our 8 MB target. In int8 that drops to about 2.3 MB. I'll check this on Day 10 by converting the real model.
 
 ## Phase 1 · Design (proposed; to confirm with Dr. Fotsing and my teammate)
 
@@ -60,6 +68,6 @@ Dates come from the team's Gantt chart.
 
 ## 🧰 Tools and tips
 
-- **Colab** runs the course notebooks. **Kaggle** hosts many plant-disease datasets and gives free GPU time.
+- I run the course notebooks locally in **Zed** ([setup](SETUP.md)). **Colab** and **Kaggle** give free GPU time for Day 8, and Kaggle hosts many plant-disease datasets.
 - The videos are from 2019 and use some older APIs (such as `ImageDataGenerator`). The course notebooks use the modern ones (`image_dataset_from_directory`, `Random*` layers); prefer those.
 - Google renamed TensorFlow Lite to **LiteRT** in 2024. It is the same `.tflite` format, so search docs under both names.
